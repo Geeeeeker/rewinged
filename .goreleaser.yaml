@@ -13,7 +13,7 @@ builds:
       - -X 'main.compileTime={{.Date}}' # set timestamp information in-program
       - -X 'main.releaseMode=true' # set gin to releaseMode
     goos: [windows]
-    goarch: [amd64]
+    goarch: [arm64]
     goamd64: [v1]
   - id: linux
     ldflags:
@@ -24,7 +24,7 @@ builds:
       - -X 'main.releaseMode=true' # set gin to releaseMode
     env: [CGO_ENABLED=0]
     goos: [linux]
-    goarch: [amd64]
+    goarch: [arm64]
     goamd64: [v1]
 
 archives:
